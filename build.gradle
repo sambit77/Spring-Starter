@@ -42,7 +42,7 @@ dependencies {
 }
 
 // Helps faster load times in Crio workspace.
-allprojects {
+/*allprojects {
     buildDir = '/tmp/external_build'
 }
 
@@ -78,3 +78,4 @@ test {
     testLogging.events ("STANDARD_ERROR")
     testLogging.events ("STANDARD_OUT")
 }
+*/
