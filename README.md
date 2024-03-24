@@ -42,7 +42,7 @@ Follow below steps to use this repository as a starter stub for a new spring-boo
 13. `git pull starter-stub main --allow-unrelated-histories --no-edit`
 14. Manually resolve merge conflict on README.md file from UI
 15. `git add .`
-16. `git commit -m "starter stub added`
+16. `git commit -m "starter stub added"`
 17. `git push -u origin main`
 
 Ensure a working codebase:- 
