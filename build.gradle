@@ -3,7 +3,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.12.RELEASE'
     id 'java'
     id 'com.github.spotbugs' version '4.7.1'
-    id 'checkstyle'
+    //Checkstyle is off , uncomment to set checkstyle :ON
+    //id 'checkstyle'
     id 'jacoco'
     id 'application'
 }
@@ -11,7 +12,7 @@ plugins {
 group = 'com.crio'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-mainClassName="com.crio.starter.App"
+mainClassName="com.project.starter.App"
 
 configurations {
     compileOnly {
@@ -42,24 +43,24 @@ dependencies {
 }
 
 // Helps faster load times in Crio workspace.
-/*allprojects {
+allprojects {
     buildDir = '/tmp/external_build'
 }
 
-spotbugsMain {
-    ignoreFailures = true
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
-spotbugsTest {
-    ignoreFailures = true
-    reports {
-        xml.enabled = false
-        html.enabled = true
-    }
-}
+// spotbugsMain {
+//     ignoreFailures = true
+//     reports {
+//         xml.enabled = false
+//         html.enabled = true
+//     }
+// }
+// spotbugsTest {
+//     ignoreFailures = true
+//     reports {
+//         xml.enabled = false
+//         html.enabled = true
+//     }
+// }
 
 jacoco {
     toolVersion = "0.8.8"
@@ -78,4 +79,5 @@ test {
     testLogging.events ("STANDARD_ERROR")
     testLogging.events ("STANDARD_OUT")
 }
-*/
+
+

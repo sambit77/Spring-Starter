@@ -1,12 +1,12 @@
-package com.crio.starter.controller;
+package com.project.starter.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
-import com.crio.starter.exchange.ResponseDto;
-import com.crio.starter.service.GreetingsService;
+import com.project.starter.exchange.ResponseDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.project.starter.service.GreetingsService;
 import java.net.URI;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

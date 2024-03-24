@@ -1,7 +1,7 @@
-package com.crio.starter.service;
+package com.project.starter.service;
 
-import com.crio.starter.exchange.ResponseDto;
-import com.crio.starter.repository.GreetingsRepository;
+import com.project.starter.exchange.ResponseDto;
+import com.project.starter.repository.GreetingsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

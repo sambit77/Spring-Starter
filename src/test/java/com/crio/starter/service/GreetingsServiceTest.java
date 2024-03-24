@@ -2,9 +2,11 @@ package com.crio.starter.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.crio.starter.data.GreetingsEntity;
-import com.crio.starter.exchange.ResponseDto;
-import com.crio.starter.repository.GreetingsRepository;
+import com.project.starter.data.GreetingsEntity;
+import com.project.starter.exchange.ResponseDto;
+import com.project.starter.repository.GreetingsRepository;
+import com.project.starter.service.GreetingsService;
+
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

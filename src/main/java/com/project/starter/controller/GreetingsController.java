@@ -1,7 +1,7 @@
-package com.crio.starter.controller;
+package com.project.starter.controller;
 
-import com.crio.starter.exchange.ResponseDto;
-import com.crio.starter.service.GreetingsService;
+import com.project.starter.exchange.ResponseDto;
+import com.project.starter.service.GreetingsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
