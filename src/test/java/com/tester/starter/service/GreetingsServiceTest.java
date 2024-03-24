@@ -1,4 +1,4 @@
-package com.crio.starter.service;
+package com.tester.starter.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
