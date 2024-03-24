@@ -2,7 +2,7 @@ This file can be used as a template for initializing and running spring projects
 
 What's included: 
 1. Gradle file created from start.spring.io
-2. Plugins for Spotbugs, Checkstyle and Jacoco included
+2. Plugins for Spotbugs, Checkstyle and Jacoco included (Disabled : to enable add (id 'checkstyle') to build.gradle) 
 3. Other dependencies like Mongo, MySql and redis.
 4. Dockerfile to start mongo server and run the spring boot application within.
 
@@ -14,6 +14,7 @@ From the repository root,
 
 1. run `./gradlew build test`run the build
 2. run `./gradlew bootjar` to create executable jar. The jar will be located inside build directories.
+3. run `./gradlew bootrun` to directly start the spring boot application accessible on (`http://localhost:8081/say-hello?messageId=001`)
 
 To run inside docker container, use below commands
 
