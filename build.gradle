@@ -3,13 +3,16 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.12.RELEASE'
     id 'java'
     id 'com.github.spotbugs' version '4.7.1'
-    id 'checkstyle'
+    //Checkstyle is off , uncomment to set checkstyle :ON
+    //id 'checkstyle'
     id 'jacoco'
+    id 'application'
 }
 
 group = 'com.crio'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+mainClassName="com.project.starter.App"
 
 configurations {
     compileOnly {
@@ -40,35 +43,35 @@ dependencies {
 }
 
 
-// spotbugsMain {
-//     ignoreFailures = true
-//     reports {
-//         xml.enabled = false
-//         html.enabled = true
-//     }
-// }
-// spotbugsTest {
-//     ignoreFailures = true
-//     reports {
-//         xml.enabled = false
-//         html.enabled = true
-//     }
-// }
+spotbugsMain {
+    ignoreFailures = true
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+spotbugsTest {
+    ignoreFailures = true
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
 
-// jacoco {
-//     toolVersion = "0.8.8"
-// }
+jacoco {
+    toolVersion = "0.8.8"
+}
 
-// jacocoTestReport {
-//     reports {
-//         xml.enabled true
-//         csv.enabled false
-//     }
-// }
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+    }
+}
 
 
-// test {
-//     useJUnitPlatform()
-//     testLogging.events ("STANDARD_ERROR")
-//     testLogging.events ("STANDARD_OUT")
-// }
+test {
+    useJUnitPlatform()
+    testLogging.events ("STANDARD_ERROR")
+    testLogging.events ("STANDARD_OUT")
+}
