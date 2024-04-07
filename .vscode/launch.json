@@ -4,6 +4,13 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "com.project.starter.App",
+            "projectName": "spring-starter-master"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "com.crio.starter.App",
             "projectName": "spring-starter-master"
         },
