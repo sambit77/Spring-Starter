@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class GreetingsController {
 
+  @Autowired
   private final GreetingsService greetingsService;
 
   @GetMapping("/say-hello")
